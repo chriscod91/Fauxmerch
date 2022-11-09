@@ -1,0 +1,16 @@
+.catalog-page {
+  background-image: url("https://r1.ilikewallpaper.net/ipad-pro-wallpapers/download-103784/abstract-tiles-4k.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ /*1background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1px;
+  height: 100%;
+  margin: 0;*/
