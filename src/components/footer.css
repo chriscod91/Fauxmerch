@@ -1,5 +1,13 @@
 .footer-page{
-    border: 1px solid rgb(0, 115, 255);
-    height:40px;
     
+    height:40px;
+    padding: .7rem;
+    text-align: center;
+    
+}
+.footer-page h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(95, 95, 86);
 }

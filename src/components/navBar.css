@@ -1,3 +1,10 @@
-.navBar-page{
-    border: 1px solid rgb(38, 16, 16);
+.logo{
+    font-weight: 650;
+    color: rgb(170, 226, 107); 
 }
+.brand{
+    transform: scale(1.9);
+    color: white;
+    margin-left: 6rem;
+}
+
