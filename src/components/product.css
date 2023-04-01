@@ -1,11 +1,38 @@
+
 .product{
-    display: inline-block;
-    border: 1px solid lightgrey;
-    width: 280px;
-    height: 330px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    width: 25rem;
+    height: 32rem;
+   
+    background-color: rgb(255, 255, 255);
+    border: 8px solid rgb(94, 0, 182);
+    margin: 1.3rem;
+    
 }
+
+.total-value{
+    color: rgb(221, 58, 8);
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.price-value{
+    font-weight: 500;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.btn{
+    margin: 10px;
+    
+}
+img{
+    margin-top: 2rem;
+    max-width: 15rem;
+    max-height: 14rem;
+    padding: 1.5rem;
+  }
+  
 
 @media(max-width: 768px) {
     .product{

@@ -7,7 +7,10 @@ class Footer extends Component {
     render() { 
         return <div className='footer-page'>
             <label>
-            <b>footer goes here</b>
+            
+            <center>
+            <h4>footer goes here</h4>
+            </center>
             </label>
         </div>;
     }
