@@ -55,11 +55,11 @@ class Catalog extends Component {
   };
 
   //when component is mounted render on screen
-  componentDidMount() {
+  async componentDidMount() {
     console.log("did mount");
     //get data from the service
     let service = new ProductService();
-    let data = service.getCatalog();
+    let data = await service.getCatalog();
 
     var cats = []; //create a cats array
     for (let i = 0; i < data.length; i++) {

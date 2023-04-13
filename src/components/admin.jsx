@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./admin.css";
+import ProductService from './../services/productService';
 class Admin extends Component {
   state = {};
   render() {
     return (
       <div className="data">
-        <button className="btn btn-info" onClick={this.seed}>
-          seed data
+        <button className="btn btn-info" onClick={this.send}>
+          send data
         </button>
         <button className="btn btn-info" onClick={this.test}>
           test read
@@ -18,8 +19,13 @@ class Admin extends Component {
     );
   }
 
-  seed = () => {
-    console.log("seeding data.");
+  send = async () => {
+    console.log("sending data.");
+
+    let service = new ProductService();
+
+    await service.seedData();
+    console.log("data seeded, try reading to confirm");
   };
   test = () => {
     console.log("testing data.");

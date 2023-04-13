@@ -158,20 +158,35 @@ var data = [
     },
 ];
 
+/**
+ * server endpoint
+ * get
+ * /api/products => get everyones products
+ * /api/products/<yourname>  =>  get your products 
+ * post
+ * /api/products => save products onto the DB
+ * delete
+ * /api/products/clear/<yourname> => delete your prods from the DB
+ */
 class ProductService {
-    serverUrl = "";
+    serverUrl = "https://visionary-creponne-130017.netlify.app/catalog";
 
-    getCatalog(){
+    async getCatalog(){
         
-        axios.get()
+        let response = await axios.get(this.serverUrl +"/api/products/chris");
+        return response.data;
         //todo: logic to connect to server and retrieve the catalog
-        return data;
+        
     }
 
-    getoffers() {}
-
-    getProdDetails() {}
-    
+    async seedData() {
+        // send data from the array on the top to the server
+        for(let i=0; i <data.length; i++){
+            let prod = data[i];
+            prod.name = "chris";
+        await axios.post(this.serverUrl + "/api/products", prod);
+        }
+    }
 }
 
 export default ProductService;
