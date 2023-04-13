@@ -11,9 +11,9 @@ class Home extends Component {
                 <img src="https://img.freepik.com/premium-vector/modern-men-s-clothing_23-2147523102.jpg?w=2000" alt="" />
             </div>
   <h1 className="display-4">Hello, welcome to Fauxmerch!</h1>
-  <p className="leader">Where we rip other peoples stuff n make sum sheckels doin it HEHEHE!.</p>
+  <p className="leader">Where we carry unique stlyes of our own creation.</p>
   <hr className="my-4"/>
-  <p>check out "our" stuff lol!.</p>
+  <p>check out our stuff.</p>
   <p className="lead">
     <Link className="btn btn-success btn-lg" to="/catalog" role="button"><i className="fa fa-hand-o-right" aria-hidden="true"></i> " Our Stuff " <i className="fa fa-hand-o-left" aria-hidden="true"></i>
 </Link>
