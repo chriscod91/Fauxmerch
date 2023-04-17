@@ -40,8 +40,8 @@ class Catalog extends Component {
         </div>
 
         <div className="products">
-          {prodsToDisplay.map((prod) => (
-            <Product key={prod.id} data={prod}></Product>
+          {prodsToDisplay.map((prod, index) => (
+            <Product key={index} data={prod}></Product>
           ))}
 
         </div>
