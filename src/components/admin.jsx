@@ -1,25 +1,26 @@
 import React, { Component } from "react";
 import "./admin.css";
 import ProductService from './../services/productService';
+
 class Admin extends Component {
   state = {};
   render() {
     return (
       <div className="data">
-        <button className="btn btn-info" onClick={this.send}>
+        <button className="btn btn-info" onClick={this.sendData}>
           send data
         </button>
-        <button className="btn btn-info" onClick={this.test}>
+        <button className="btn btn-info" onClick={this.testData}>
           test read
         </button>
-        <button className="btn btn-info" onClick={this.clear}>
+        <button className="btn btn-info" onClick={this.clearData}>
           clear data
         </button>
       </div>
     );
   }
 
-  send = async () => {
+  sendData = async () => {
     console.log("sending data.");
 
     let service = new ProductService();
@@ -27,11 +28,16 @@ class Admin extends Component {
     await service.seedData();
     console.log("data seeded, try reading to confirm");
   };
-  test = () => {
-    console.log("testing data.");
+  
+  testData = async () => {
+    let service  = new ProductService();
+    let data = await service.getCatalog();
+    console.log("test read:", data);
   };
 
-  clear = () => {
+
+
+  clearData = () => {
     console.log("clearing data.");
   };
 }
