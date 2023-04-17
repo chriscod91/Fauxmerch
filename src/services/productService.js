@@ -177,6 +177,7 @@ class ProductService {
         return response.data;
         //todo: logic to connect to server and retrieve the catalog
         
+        
     }
 
     async seedData() {
@@ -185,8 +186,10 @@ class ProductService {
             let prod = data[i];
             prod.name = "chris";
         await axios.post(this.serverUrl + "/api/products", prod);
+        
         }
     }
+    
 }
 
 export default ProductService;
