@@ -50,7 +50,7 @@ class Catalog extends Component {
   }
 
   selectCategory = (cat) => {
-    console.log("user selected a cat.");
+    console.log("user selected a cat.", cat);
     this.setState({ selectedCategory: cat });
   };
 
