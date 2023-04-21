@@ -8,7 +8,7 @@ class About extends Component {
 
         <div className="about-page">
             <h1>About Us</h1>
-            <h2>Hello!</h2>
+            <h2>Hello world!</h2>
         </div>
         );
     }
