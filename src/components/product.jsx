@@ -12,7 +12,7 @@ class Product extends Component {
     
         <div className='product'>
 
-            <img src={"/img/products/" + this.props.data.image} alt="product"/>
+            <img src={"/img/products/" + this.props.data.image} alt="product here"/>
             <h5>{this.props.data.title}</h5>
             
             <div className="prices">
