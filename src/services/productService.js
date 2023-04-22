@@ -169,7 +169,7 @@ var data = [
  * /api/products/clear/<yourname> => delete your prods from the DB
  */
 class ProductService {
-    serverUrl = "https://visionary-creponne-130017.netlify.app/catalog";
+    serverUrl = "https://fauxmerch.vercel.app/";
 
     async getCatalog(){
         
