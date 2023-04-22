@@ -169,7 +169,7 @@ var data = [
  * /api/products/clear/<yourname> => delete your prods from the DB
  */
 class ProductService {
-    serverUrl = "https://fauxmerch.vercel.app/";
+    serverUrl = "https://fauxmerch-c0165fvdx-chriscod91.vercel.app";
 
     async getCatalog(){
         
